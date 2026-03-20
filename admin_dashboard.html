@@ -70,7 +70,9 @@
             flex-direction: column;
         }
 
-        .sidebar-content { overflow-y: auto; flex-grow: 1; }
+        .sidebar-content {
+    overflow-y: auto;
+}
         .sidebar a {
             display: flex; align-items: center; gap: 12px;
             padding: 12px 15px; border-radius: 10px;
@@ -80,8 +82,15 @@
         }
         .sidebar a:hover { color: #ff0080; background: #111; }
         .sidebar a.active { background: linear-gradient(90deg, #ff0080, #ff2a8a); color: #fff; }
-        .sidebar .logout { color: #ff4d4d; border: 1px solid rgba(255,77,77,0.1); margin-top: auto; cursor: pointer; }
-
+.sidebar .logout {
+    color:#ff4d4d;
+    border:1px solid rgba(255,77,77,0.1);
+    cursor:pointer;
+    margin-top:10px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
         /* ===== MAIN CONTENT ===== */
         .main {
             margin-left: 250px;
